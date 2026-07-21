@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Fraunces, Inter } from 'next/font/google'
+import { Header } from './components/header'
 import './globals.css'
 
 const inter = Inter({
@@ -34,7 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-BR' className={`${inter.variable} ${fraunces.variable} antialiased`}>
-      <body>{children}</body>
+      <body className='min-w-[320px]'>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
