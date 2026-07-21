@@ -12,9 +12,19 @@ const fraunces = Fraunces({
   subsets: ['latin'],
 })
 
+const title = 'AKAH • Marketing Médico'
+const description = 'A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos crescimento, com metodologia, estratégia e resultado mensurável.'
+const url = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+
 export const metadata: Metadata = {
-  title: 'AKAH Marketing Médico',
-  description: 'A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos crescimento, com metodologia, estratégia e resultado mensurável.',
+  metadataBase: new URL(url),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: '/',
+  },
 }
 
 export default function RootLayout({
