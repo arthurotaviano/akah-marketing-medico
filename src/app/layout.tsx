@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Fraunces, Inter } from 'next/font/google'
-import { Footer } from './components/footer/footer'
-import { Header } from './components/header'
+import { Footer } from '../components/footer/footer'
+import { Header } from '../components/header'
 import './globals.css'
 
 const inter = Inter({
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang='pt-BR' className={`${inter.variable} ${fraunces.variable} antialiased`}>
       <body className='min-w-[320px]'>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
