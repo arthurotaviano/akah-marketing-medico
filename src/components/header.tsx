@@ -17,7 +17,7 @@ export function Header() {
               </defs>
             </svg>
           </div>
-          <h1 className='text-xs tracking-wider uppercase'>
+          <h1 className='text-white text-xs tracking-wider uppercase'>
             AKAH<span className='max-[425px]:sr-only'> • Marketing Médico</span>
           </h1>
         </div>
