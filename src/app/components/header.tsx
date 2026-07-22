@@ -22,8 +22,10 @@ export function Header() {
           </h1>
         </div>
         <a href='https://wa.me/+5547988234913' target='_blank' className='inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 md:px-5 py-1.5 md:py-2 bg-white hover:bg-white/90 transition-colors ease-in text-background text-sm font-medium'>
-          Fale conosco
-          <ArrowUpRight size={16} />
+          <span>Fale conosco</span>
+          <span aria-hidden='true'>
+            <ArrowUpRight size={16} />
+          </span>
         </a>
       </div>
     </header>
