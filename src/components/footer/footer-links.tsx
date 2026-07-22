@@ -1,3 +1,4 @@
+import { WHATSAPP_URL } from '@/lib/constants'
 import { SiInstagram, SiWhatsapp } from '@icons-pack/react-simple-icons'
 
 interface LinksProps {
@@ -16,7 +17,7 @@ const links: LinksProps[] = [
   },
   {
     name: 'WhatsApp',
-    href: 'https://wa.me/+5547988234913',
+    href: WHATSAPP_URL,
     icon: SiWhatsapp,
     label: '(47) 98823-4913',
   },

@@ -1,3 +1,4 @@
+import { WHATSAPP_URL } from '@/lib/constants'
 import { ArrowUpRight } from 'lucide-react'
 
 export function Header() {
@@ -21,7 +22,7 @@ export function Header() {
             AKAH<span className='max-[425px]:sr-only'> • Marketing Médico</span>
           </h1>
         </div>
-        <a href='https://wa.me/+5547988234913' target='_blank' className='inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 md:px-5 py-1.5 md:py-2 bg-white hover:bg-white/90 transition-colors ease-in text-background text-sm font-medium'>
+        <a href={WHATSAPP_URL} target='_blank' className='inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 md:px-5 py-1.5 md:py-2 bg-white hover:bg-white/90 transition-colors ease-in text-background text-sm font-medium'>
           <span>Fale conosco</span>
           <span aria-hidden='true'>
             <ArrowUpRight size={16} />
