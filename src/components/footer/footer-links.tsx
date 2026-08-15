@@ -27,14 +27,19 @@ export function FooterLinks() {
   return (
     <div className='flex flex-col items-center gap-2'>
       {links.map(link => (
-        <a key={link.name} className='flex items-center gap-1.5 md:gap-2' href={link.href} target='_blank'>
+        <a
+          key={link.name}
+          className='group flex items-center gap-1.5 md:gap-2'
+          href={link.href}
+          target='_blank'
+        >
           <span>
             <span aria-hidden='true'>
               <link.icon className='size-3 md:size-3.5 fill-accent-2' />
             </span>
             <span className='sr-only'>{link.name}</span>
           </span>
-          <span className='text-foreground-secondary'>{link.label}</span>
+          <span className='text-foreground-secondary group-hover:underline'>{link.label}</span>
         </a>
       ))}
     </div>
