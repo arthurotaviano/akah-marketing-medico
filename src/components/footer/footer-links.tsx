@@ -1,7 +1,7 @@
 import { WHATSAPP_URL } from '@/lib/constants'
 import { SiInstagram, SiWhatsapp } from '@icons-pack/react-simple-icons'
 
-interface LinksProps {
+type LinksProps = {
   name: string
   href: string
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
