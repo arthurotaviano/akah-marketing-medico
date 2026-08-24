@@ -15,8 +15,15 @@ const fraunces = Fraunces({
 })
 
 const title = 'AKAH • Marketing Médico'
-const description = 'A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos crescimento, com metodologia, estratégia e resultado mensurável.'
-const url = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+const description =
+  'A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos crescimento, com metodologia, estratégia e resultado mensurável.'
+const url =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'http://localhost:3000')
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -36,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-BR' className={`${inter.variable} ${fraunces.variable} antialiased`}>
-      <body className='min-w-[320px]'>
+      <body className='min-w-[320px] bg-background text-foreground-primary font-sans'>
         <Header />
         <main>{children}</main>
         <Footer />

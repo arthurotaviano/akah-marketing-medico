@@ -12,10 +12,6 @@
 }
 
 @layer base {
-  body {
-    @apply bg-background text-foreground-primary font-sans;
-  }
-
   :focus-visible {
     @apply outline-2 outline-offset-1 outline-white;
   }
