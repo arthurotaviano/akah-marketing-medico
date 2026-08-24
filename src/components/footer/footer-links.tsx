@@ -25,11 +25,11 @@ const links: LinksProps[] = [
 
 export function FooterLinks() {
   return (
-    <div className='flex flex-col items-center gap-2'>
+    <div className='flex flex-col md:flex-row items-center gap-2 md:gap-6'>
       {links.map(link => (
         <a
           key={link.name}
-          className='group flex items-center gap-1.5 md:gap-2'
+          className='group flex items-center gap-1.5'
           href={link.href}
           target='_blank'
         >
