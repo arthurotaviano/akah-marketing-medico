@@ -1,14 +1,14 @@
 import { CONTACT_INFO, CONTACT_LINKS } from '@/constants/contact'
 import { SiInstagram, SiWhatsapp } from '@icons-pack/react-simple-icons'
 
-type LinksProps = {
+type LinkProps = {
   name: string
   href: string
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
   label: string
 }
 
-const links: LinksProps[] = [
+const links: LinkProps[] = [
   {
     name: 'Instagram',
     icon: SiInstagram,
@@ -23,7 +23,7 @@ const links: LinksProps[] = [
   },
 ]
 
-export function FooterLinks() {
+export function Links() {
   return (
     <div className='flex flex-col md:flex-row items-center gap-2 md:gap-6'>
       {links.map(link => (

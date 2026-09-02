@@ -1,4 +1,4 @@
-export function FooterFoot() {
+export function Foot() {
   return (
     <div className='flex flex-col items-center gap-4'>
       <p className='mx-auto w-61.25 md:w-105.5 text-white font-serif text-xl md:text-2xl leading-tight font-semibold'>
