@@ -1,6 +1,29 @@
-import { links } from '@/data/footer'
+import { CONTACT_INFO, CONTACT_LINKS } from '@/constants/contact'
+import { SiInstagram, SiWhatsapp } from '@icons-pack/react-simple-icons'
 
-export function Links() {
+type LinkProps = {
+  name: string
+  href: string
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  label: string
+}
+
+export const links: LinkProps[] = [
+  {
+    name: 'Instagram',
+    icon: SiInstagram,
+    href: CONTACT_LINKS.INSTAGRAM,
+    label: `@${CONTACT_INFO.INSTAGRAM_USER}`,
+  },
+  {
+    name: 'WhatsApp',
+    href: CONTACT_LINKS.WHATSAPP,
+    icon: SiWhatsapp,
+    label: CONTACT_INFO.WHATSAPP,
+  },
+]
+
+export function FooterLinks() {
   return (
     <div className='flex flex-col md:flex-row items-center gap-2 md:gap-6'>
       {links.map(link => (

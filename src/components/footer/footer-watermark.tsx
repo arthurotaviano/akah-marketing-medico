@@ -1,4 +1,4 @@
-export function Watermark() {
+export function FooterWatermark() {
   return (
     <div
       className='absolute right-0 -bottom-10 left-0 z-[-1] w-full pointer-events-none select-none'
