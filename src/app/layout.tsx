@@ -17,10 +17,8 @@ const fraunces = Fraunces({
 const title = 'AKAH • Marketing Médico'
 const description =
   'A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos crescimento, com metodologia, estratégia e resultado mensurável.'
-const url = process.env.NEXT_PUBLIC_SITE_URL!
-
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
   title,
   description,
   openGraph: {
