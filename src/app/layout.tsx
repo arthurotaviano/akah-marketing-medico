@@ -17,13 +17,7 @@ const fraunces = Fraunces({
 const title = 'AKAH • Marketing Médico'
 const description =
   'A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos crescimento, com metodologia, estratégia e resultado mensurável.'
-const url =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : 'http://localhost:3000')
+const url = process.env.NEXT_PUBLIC_SITE_URL!
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
