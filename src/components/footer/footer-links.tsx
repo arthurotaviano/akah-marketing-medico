@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from '@/lib/constants'
+import { CONTACT_INFO, CONTACT_LINKS } from '@/constants/contact'
 import { SiInstagram, SiWhatsapp } from '@icons-pack/react-simple-icons'
 
 type LinksProps = {
@@ -12,14 +12,14 @@ const links: LinksProps[] = [
   {
     name: 'Instagram',
     icon: SiInstagram,
-    href: 'https://www.instagram.com/akahmarketingmedico',
-    label: '@akahmarketingmedico',
+    href: CONTACT_LINKS.INSTAGRAM,
+    label: `@${CONTACT_INFO.INSTAGRAM_USER}`,
   },
   {
     name: 'WhatsApp',
-    href: WHATSAPP_URL,
+    href: CONTACT_LINKS.WHATSAPP,
     icon: SiWhatsapp,
-    label: '(47) 98823-4913',
+    label: CONTACT_INFO.WHATSAPP,
   },
 ]
 

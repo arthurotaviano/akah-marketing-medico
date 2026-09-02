@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from '@/lib/constants'
+import { CONTACT_LINKS } from '@/constants/contact'
 import { ArrowUpRight } from 'lucide-react'
 
 export function Header() {
@@ -48,7 +48,7 @@ export function Header() {
           </h1>
         </div>
         <a
-          href={WHATSAPP_URL}
+          href={CONTACT_LINKS.WHATSAPP}
           target='_blank'
           className='inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 md:px-5 py-1.5 md:py-2 bg-white hover:bg-white/90 text-background text-sm font-medium'
         >

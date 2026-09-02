@@ -1,7 +1,7 @@
 import { Eyebrow } from '@/components/eyebrow'
 import { Headline } from '@/components/headline'
 import { LinkButton } from '@/components/link-button'
-import { WHATSAPP_URL } from '@/lib/constants'
+import { CONTACT_LINKS } from '@/constants/contact'
 import Image from 'next/image'
 
 export function Hero() {
@@ -25,7 +25,7 @@ export function Hero() {
             A AKAH é uma agência de marketing especializada em médicos. Não fazemos post. Fazemos
             crescimento, com metodologia, estratégia e resultado mensurável.
           </p>
-          <LinkButton variant='solid' href={WHATSAPP_URL} target='_blank'>
+          <LinkButton variant='solid' href={CONTACT_LINKS.WHATSAPP} target='_blank'>
             Quero conhecer o Método CARE
           </LinkButton>
         </div>
