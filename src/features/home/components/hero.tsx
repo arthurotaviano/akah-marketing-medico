@@ -1,9 +1,9 @@
-import { Section, SectionEyebrow, SectionHeadline } from '@/components/section'
+import { Section, SectionEyebrow, SectionHeadline } from '@/components/layout/section'
 import { LinkButton } from '@/components/ui/link-button'
 import { CONTACT_LINKS } from '@/constants/contact'
 import Image from 'next/image'
 
-export function Hero() {
+export function SectionHero() {
   return (
     <Section className='pt-26 md:pt-32 lg:pt-38' gradient>
       <div className='content relative z-2 flex flex-col md:grid md:grid-cols-2 gap-8'>

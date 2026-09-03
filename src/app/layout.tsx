@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Fraunces, Inter } from 'next/font/google'
-import { Footer } from '../components/footer/footer'
-import { Header } from '../components/header'
+import { Footer } from '../components/layout/footer/footer'
+import { Header } from '../components/layout/header'
 import './globals.css'
 
 const inter = Inter({

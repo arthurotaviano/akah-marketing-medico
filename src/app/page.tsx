@@ -1,5 +1,11 @@
-import { Hero } from '../features/home/components/hero'
+import { SectionProblems } from '@/features/home/components/problems'
+import { SectionHero } from '../features/home/components/hero'
 
 export default function Home() {
-  return <Hero />
+  return (
+    <>
+      <SectionHero />
+      <SectionProblems />
+    </>
+  )
 }
