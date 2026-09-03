@@ -1,9 +1,4 @@
-import {
-  Section,
-  SectionEyebrow,
-  SectionHeadline,
-  SectionHeadlineHighlight,
-} from '@/components/layout/section'
+import { Section, SectionEyebrow, SectionHeadline } from '@/components/layout/section'
 import { Card } from '@/components/ui/card'
 import { LinkButton } from '@/components/ui/link-button'
 import { CONTACT_LINKS } from '@/constants/contact'
@@ -45,12 +40,14 @@ const cards: CardProps[] = [
 
 export function SectionCARE() {
   return (
-    <Section className='pt-0!'>
+    <Section
+      className='text-foreground-secondary after:bg-linear-to-t after:from-black/70 after:to-black/30'
+      gradient
+    >
       <div className='content relative z-2 flex flex-col items-center gap-4 md:gap-8 text-center'>
-        <SectionEyebrow>Método CARE™</SectionEyebrow>
+        <SectionEyebrow dark>Método CARE™</SectionEyebrow>
         <SectionHeadline>
-          A metodologia exclusiva da AKAH para{' '}
-          <SectionHeadlineHighlight>crescimento médico sustentável.</SectionHeadlineHighlight>
+          A metodologia exclusiva da AKAH para crescimento médico sustentável.
         </SectionHeadline>
         <p className='text-balance'>
           O Método CARE organiza o crescimento do consultório em quatro etapas sequenciais. A ordem
@@ -65,7 +62,7 @@ export function SectionCARE() {
                 </span>
                 <span className='font-semibold text-foreground-secondary'>{card.title}</span>
               </h3>
-              <p className='text-balance'>{card.text}</p>
+              <p className='text-foreground-primary text-balance'>{card.text}</p>
             </Card>
           ))}
         </div>
