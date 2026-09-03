@@ -1,5 +1,5 @@
-import { LinkButton } from '@/components/link-button'
 import { Section, SectionEyebrow, SectionHeadline } from '@/components/section'
+import { LinkButton } from '@/components/ui/link-button'
 import { CONTACT_LINKS } from '@/constants/contact'
 import Image from 'next/image'
 
