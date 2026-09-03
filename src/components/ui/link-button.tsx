@@ -16,12 +16,12 @@ const variants = {
 export function LinkButton({ variant = 'gradient', href, target, children }: LinkButtonProps) {
   return (
     <a
-      className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-5 py-2 text-sm md:text-base font-medium ${variants[variant]}`}
+      className={`inline-flex items-center gap-1 rounded-full px-5 py-2 text-sm md:text-base font-medium ${variants[variant]}`}
       href={href}
       target={target}
     >
       {children}
-      <ArrowUpRight size={16} />
+      <ArrowUpRight className='shrink-0' size={16} />
     </a>
   )
 }
