@@ -17,7 +17,7 @@ export function SectionHero() {
             loading='eager'
           />
         </div>
-        <div className='flex flex-col items-start gap-4 md:gap-8 md:order-1 text-foreground-secondary'>
+        <div className='flex flex-col items-center md:items-start gap-4 md:gap-8 md:order-1 text-foreground-secondary max-md:text-center'>
           <SectionEyebrow dark>Especialistas em Marketing Médico</SectionEyebrow>
           <SectionHeadline>
             Transformamos autoridade médica em crescimento sustentável.
