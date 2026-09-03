@@ -7,7 +7,7 @@ export function FooterFoot() {
           crescimento sustentável
         </span>
       </p>
-      <div>AKAH • Marketing Médico – 2026</div>
+      <div>AKAH • Marketing Médico – {new Date().getFullYear()}</div>
     </div>
   )
 }
