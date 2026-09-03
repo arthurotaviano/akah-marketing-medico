@@ -1,3 +1,4 @@
+import { SectionCARE } from '@/features/home/components/care'
 import { SectionProblems } from '@/features/home/components/problems'
 import { SectionHero } from '../features/home/components/hero'
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <SectionHero />
       <SectionProblems />
+      <SectionCARE />
     </>
   )
 }
