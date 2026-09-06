@@ -1,6 +1,6 @@
-import { SectionCARE } from '@/features/home/components/care'
-import { SectionProblems } from '@/features/home/components/problems'
-import { SectionHero } from '../features/home/components/hero'
+import { SectionCARE } from '@/views/home/components/care'
+import { SectionHero } from '@/views/home/components/hero'
+import { SectionProblems } from '@/views/home/components/problems'
 
 export default function Home() {
   return (
