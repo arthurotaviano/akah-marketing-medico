@@ -39,7 +39,7 @@ export function SectionTargetAudience() {
       <div className='content relative z-2 flex flex-col items-center gap-4 md:gap-8 text-center'>
         <SectionEyebrow>Para quem faz sentido</SectionEyebrow>
         <SectionHeadline>
-          O Método CARE foi criado para um{' '}
+          O Método&nbsp;CARE foi criado para um{' '}
           <SectionHeadlineHighlight>perfil específico de médico.</SectionHeadlineHighlight>
         </SectionHeadline>
         <p className='text-balance'>

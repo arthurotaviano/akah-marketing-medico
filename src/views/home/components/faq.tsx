@@ -28,7 +28,7 @@ const items = [
     value: 'question-3',
     trigger: 'Como funciona o início do trabalho?',
     content:
-      'Começamos com a Coleta de Dados, a primeira etapa do Método CARE. A gente mergulha no seu consultório antes de qualquer estratégia. É a partir desse diagnóstico que tudo começa.',
+      'Começamos com a Coleta de Dados, a primeira etapa do Método\u00A0CARE. A gente mergulha no seu consultório antes de qualquer estratégia. É a partir desse diagnóstico que tudo começa.',
   },
 ]
 

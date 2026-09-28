@@ -56,7 +56,7 @@ export function SectionProblems() {
         </div>
         <p className='text-balance'>
           Esses três problemas têm uma raiz comum: falta de estrutura. E é exatamente isso que o
-          Método CARE resolve.
+          Método&nbsp;CARE resolve.
         </p>
       </div>
     </Section>

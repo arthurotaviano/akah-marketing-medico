@@ -45,13 +45,13 @@ export function SectionCARE() {
       gradient
     >
       <div className='content relative z-2 flex flex-col items-center gap-4 md:gap-8 text-center'>
-        <SectionEyebrow dark>Método CARE™</SectionEyebrow>
+        <SectionEyebrow dark>Método&nbsp;CARE™</SectionEyebrow>
         <SectionHeadline>
           A metodologia exclusiva da AKAH para crescimento médico sustentável.
         </SectionHeadline>
         <p className='text-balance'>
-          O Método CARE organiza o crescimento do consultório em quatro etapas sequenciais. A ordem
-          importa, porque crescimento real é construído em sequência, não com ações isoladas.
+          O Método&nbsp;CARE organiza o crescimento do consultório em quatro etapas sequenciais. A
+          ordem importa, porque crescimento real é construído em sequência, não com ações isoladas.
         </p>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-5'>
           {cards.map(card => (
@@ -68,7 +68,7 @@ export function SectionCARE() {
         </div>
         <p className='text-balance'>Quatro etapas. Uma sequência lógica. Resultado mensurável.</p>
         <LinkButton variant='solid' href={CONTACT_LINKS.WHATSAPP} target='_blank'>
-          Quero entender como o Método CARE se aplica ao meu consultório
+          Quero entender como o Método&nbsp;CARE se aplica ao meu consultório
         </LinkButton>
       </div>
     </Section>

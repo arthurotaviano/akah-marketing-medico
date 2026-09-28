@@ -27,7 +27,7 @@ export function SectionHero() {
             crescimento, com metodologia, estratégia e resultado mensurável.
           </p>
           <LinkButton variant='solid' href={CONTACT_LINKS.WHATSAPP} target='_blank'>
-            Quero conhecer o Método CARE
+            Quero conhecer o Método&nbsp;CARE
           </LinkButton>
         </div>
       </div>

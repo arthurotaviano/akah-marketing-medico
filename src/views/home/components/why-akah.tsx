@@ -20,7 +20,7 @@ const cards: CardProps[] = [
     id: 'card-2',
     icon: ListTree,
     title: 'Metodologia própria',
-    text: 'O Método CARE não é um conjunto de serviços. É uma sequência lógica de etapas com entregas concretas e mensuráveis. Você sabe o que foi feito, o que está sendo feito e o que vem a seguir.',
+    text: 'O Método\u00A0CARE não é um conjunto de serviços. É uma sequência lógica de etapas com entregas concretas e mensuráveis. Você sabe o que foi feito, o que está sendo feito e o que vem a seguir.',
   },
   {
     id: 'card-3',
