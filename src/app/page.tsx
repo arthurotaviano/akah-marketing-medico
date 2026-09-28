@@ -1,5 +1,6 @@
 import { SectionAbout } from '@/views/home/components/about'
 import { SectionCARE } from '@/views/home/components/care'
+import { SectionCTA } from '@/views/home/components/cta'
 import { SectionFAQ } from '@/views/home/components/faq'
 import { SectionHero } from '@/views/home/components/hero'
 import { SectionProblems } from '@/views/home/components/problems'
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionAbout />
       <SectionValue />
       <SectionFAQ />
+      <SectionCTA />
     </>
   )
 }
