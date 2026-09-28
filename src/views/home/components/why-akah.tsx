@@ -1,9 +1,4 @@
-import {
-  Section,
-  SectionEyebrow,
-  SectionHeadline,
-  SectionHeadlineHighlight,
-} from '@/components/layout/section'
+import { Section, SectionEyebrow, SectionHeadline } from '@/components/layout/section'
 import { Card } from '@/components/ui/card'
 import { Gem, List, ListTree, LucideIcon } from 'lucide-react'
 
@@ -37,12 +32,14 @@ const cards: CardProps[] = [
 
 export function SectionWhyAKAH() {
   return (
-    <Section className='border-t border-border'>
+    <Section
+      className='text-foreground-secondary after:bg-linear-to-t after:from-black/70 after:to-black/30'
+      gradient
+    >
       <div className='content relative z-2 flex flex-col items-center gap-4 md:gap-8 text-center'>
         <SectionEyebrow>Por que a AKAH?</SectionEyebrow>
         <SectionHeadline>
-          Não somos agência genérica. Somos{' '}
-          <SectionHeadlineHighlight>especialistas em autoridade médica.</SectionHeadlineHighlight>
+          Não somos agência genérica. Somos especialistas em autoridade médica.
         </SectionHeadline>
         <p className='text-balance'>
           Não atendemos todo tipo de médico. Essa escolha é intencional, e é o que nos permite
@@ -52,8 +49,8 @@ export function SectionWhyAKAH() {
           {cards.map(card => (
             <Card icon={card.icon} key={card.id}>
               <p className='flex flex-col gap-2 text-balance'>
-                <span className='block font-semibold text-foreground-secondary'>{card.title}</span>{' '}
-                {card.text}
+                <span className='block font-semibold'>{card.title}</span>
+                <span className='text-foreground-primary'>{card.text}</span>
               </p>
             </Card>
           ))}
