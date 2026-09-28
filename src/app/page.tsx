@@ -1,5 +1,6 @@
 import { SectionAbout } from '@/views/home/components/about'
 import { SectionCARE } from '@/views/home/components/care'
+import { SectionFAQ } from '@/views/home/components/faq'
 import { SectionHero } from '@/views/home/components/hero'
 import { SectionProblems } from '@/views/home/components/problems'
 import { SectionTargetAudience } from '@/views/home/components/target-audience'
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionWhyAKAH />
       <SectionAbout />
       <SectionValue />
+      <SectionFAQ />
     </>
   )
 }
