@@ -5,8 +5,6 @@ import {
   SectionHeadlineHighlight,
 } from '@/components/layout/section'
 import { Card } from '@/components/ui/card'
-import { LinkButton } from '@/components/ui/link-button'
-import { CONTACT_LINKS } from '@/constants/contact'
 import { Gem, List, ListTree, LucideIcon } from 'lucide-react'
 
 type CardProps = {
@@ -60,12 +58,6 @@ export function SectionWhyAKAH() {
             </Card>
           ))}
         </div>
-        <p className='text-balance'>
-          Se você se reconheceu aqui, a conversa começa pelo botão abaixo.
-        </p>
-        <LinkButton variant='solid' href={CONTACT_LINKS.WHATSAPP} target='_blank'>
-          Quero uma análise do meu&nbsp;consultório
-        </LinkButton>
       </div>
     </Section>
   )
